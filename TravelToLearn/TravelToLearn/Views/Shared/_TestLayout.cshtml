@@ -1,0 +1,83 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>TravelToLearn | Seyahat ve Öneri Web Sitesi</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" href="~/web/css/style.css" type="text/css" media="all" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link href="~/web/css/slider.css" rel="stylesheet" type="text/css" media="all" />
+    <script src="~/web/js/jquery.min.js"></script>
+    <script src="~/web/js/responsiveslides.min.js"></script>
+
+    <script>
+    // You can also use "$(window).load(function() {"
+    $(function () {
+      // Slideshow 1
+      $("#slider1").responsiveSlides({
+         auto: true,
+		 nav: true,
+		 speed: 500,
+		 namespace: "callbacks",
+      });
+    });
+    </script>
+</head>
+<body>
+    <div class="header">
+        <div class="wrap">
+            <div class="logo"><a href="/Default/Index"><img src="~/web/images/1-removebg-preview (1).png" alt="" /></a></div>
+            <div class="con-right">
+                <div class="grid1-l-img">
+                    <img src="~/web/images/whatsapp-icon.png" style="width:19px;height:19px;" alt="">
+                </div>
+                <div class="grid1-l-desc">
+                    <p>Whatsapp : +00 000 000 00 00</p>
+                </div>
+                <div class="clear"></div>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </div>
+    <div class="header-bottom">
+        <div class="wrap">
+            <ul id="nav">
+                <li><a href="/Default/Index/">Ana Sayfa</a></li>
+                <li><a class="hsubs" href="/Blog/Index/">Şehirler</a></li>
+                <li>
+                    <a class="hsubs" href="destinations.html">Rehber</a>
+                    <ul class="subs">
+                        <li><a href="/TarihiMekanlar/Index/">Tarihi Mekanlar</a></li>
+                        <li><a href="/Restoranlar/Index/">Restoranlar</a></li>
+                        <li><a href="/GezilecekYerler/Index/">Gezilecek Yerler</a></li>
+                    </ul>
+                </li>
+                @*<li><a href="#">Rezervasyon ve Satış</a></li>*@
+                <li><a href="/Iletisim/Index/">İletişim</a></li>
+                <li><a class="hsubs" href="/About/Index/">Hakkımızda</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class"content">
+        @RenderBody()
+    </div>
+    <div class="footer-bottom">
+        <div class="wrap">
+            <div class="copy">
+                <p>&copy; 2021 TravelToLearn. Tüm Hakları Saklıdır | Bu proje Gazi Üniversitesi Teknoloji Fakültesi Bilgisayar Mühendisliği Bölümü 3. Sınıf Öğrencileri (Umut Furkan Yavuz, Ahmet Furkan Gedikli, Oğuzhan Şengün, Halil Eray Kılınç) tarafından hazırlanmış olup gerekli iletişim adreslerinden ulaşabilirsiniz. </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
